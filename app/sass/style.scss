@@ -1,0 +1,19 @@
+@import "variables";
+@import "fonts";
+@import "main";
+
+@import "./blocks/header";
+@import "./blocks/base";
+@import "./blocks/text";
+@import "./blocks/title";
+@import "./blocks/catalog";
+@import "./blocks/price";
+@import "./blocks/product-name";
+@import "./blocks/product-text";
+@import "./blocks/btn";
+@import "./blocks/slick-arrow";
+@import "./blocks/giftset";
+@import "./blocks/slider-dots";
+@import "./blocks/combo";
+@import "./blocks/footer";
+@import "node_modules/slick-carousel/slick/slick.scss";

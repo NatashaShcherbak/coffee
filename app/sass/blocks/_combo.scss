@@ -1,0 +1,53 @@
+.combo {
+    background: linear-gradient(90deg, $light-color 77%, $primary-color 77%);
+    padding-top: 88px;
+    padding-bottom: 128px;
+    text-align: center;
+    &__slider {
+        padding-top: 64px;
+        margin: 0 -15px;
+        display: flex;
+        & .slick-list {
+            display: flex;
+            & .slick-track {
+                display: flex;
+            }
+        }
+    }
+    &__wrap {
+        width: 33.333%;
+        padding: 0 15px;
+    }
+    &__card {
+        height: 100%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            filter: drop-shadow(0 4px 12px rgba(205, 205, 205, 0.5));
+            transition-duration: 0.3s;
+        }
+        & .price {
+            margin-bottom: 9px;
+        }
+        & .product-name {
+            align-self: center;
+        }
+        & .product-text {
+            padding: 10px 0 32px;
+            text-align: start;
+        }
+        &-item {
+            padding: 42px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    &__link {
+        & img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}

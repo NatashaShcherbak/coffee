@@ -1,0 +1,38 @@
+.catalog {
+    background: linear-gradient(90deg, $primary-color 23%, $light-color 23%);
+    padding-top: 90px;
+    padding-bottom: 112px;
+    text-align: center;
+    &__slider {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 57px -15px 0;
+        position: relative;
+    }
+    &__wrap {
+        padding: 16px 15px;
+    }
+    &__card {
+        display: flex;
+        background-color: $white;
+        &-img {
+            & img {
+                height: 100%;
+                max-width: 100%;
+                display: block;
+            }
+        }
+        &:hover {
+            filter: drop-shadow(0 4px 10px rgba(205, 205, 205, 0.5));
+            transition-duration: 0.3s;
+        }
+        &-item {
+            padding: 42px 23px 42px 43px;
+            text-align: start;
+            width: 57.9%;
+        }
+        &-text {
+            padding: 24px 0 34px;
+        }
+    }
+}

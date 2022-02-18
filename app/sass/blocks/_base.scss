@@ -1,0 +1,56 @@
+.base {
+    padding-top: 87px;
+    padding-bottom: 56px;
+    background-color: $light-color;
+    text-align: center;
+    &__row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 72px 0;
+    }
+    &__card {
+        width: 19.8%;
+        &-title {
+            font-size: 24px;
+            line-height: 28px;
+            color: $dark-blue;
+            padding: 122px 0 12px;
+            position: relative;
+            &::before {
+                content: "";
+                width: 80px;
+                height: 81px;
+                background-image: url(../img/nguon_goc.svg);
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &_chat {
+                &::before {
+                    width: 79px;
+                    height: 79px;
+                    background-image: url(../img/chat_luong.svg);
+                }
+            }
+            &_cac {
+                &::before {
+                    background-image: url(../img/cac_loai_hat.svg);
+                }
+            }
+            &_pha {
+                &::before {
+                    width: 75px;
+                    background-image: url(../img/pha_che.svg);
+                }
+            }
+        }
+        &-text {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+            color: $dark-gray;
+        }
+    }
+}
