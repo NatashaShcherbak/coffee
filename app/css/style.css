@@ -117,6 +117,7 @@ ul {
 .header__cart {
   margin-right: 10.3%;
   position: relative;
+  z-index: 2;
   background-image: url(../img/cart.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -182,6 +183,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 2;
 }
 
 .header__nav-link {
@@ -223,6 +226,8 @@ ul {
 
 .header__video video {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__video-btn {
